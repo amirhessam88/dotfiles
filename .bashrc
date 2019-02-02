@@ -1,4 +1,3 @@
-# Amirhessam Tahmassebi
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -96,6 +95,8 @@ alias l='ls -CF'
 # some Amir's alias
 alias c='clear'
 alias ..='cd ..'
+alias dl="cd /mnt/c/Users/AT066763/Downloads"
+alias io="cd ~/GitHub/Me/github.io"
 alias open='xdg-open'
 
 
@@ -141,3 +142,6 @@ for f in /opt/tools/*/*.env
 do
 	. ${f}
 done
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
