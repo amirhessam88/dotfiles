@@ -1,3 +1,4 @@
+# Amirhessam Tahmassebi
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -127,11 +128,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#export PYTHON_HOME=/home/amirhessam/anaconda3
-export PYTHON_HOME=/home/amirhessam/anaconda2
+export PYTHON_HOME=/home/amirhessam/anaconda3
+#export PYTHON_HOME=/home/amirhessam/anaconda2
 export PATH=${PYTHON_HOME}/bin:${PATH}
 
-export PS1="Linux:~> "
+export PS1="$(tput setaf 166)amir $(tput setaf 228)@ $(tput setaf 71)\W -> $(tput sgr0)"
 export BROWSER=open
 export PYSPARK_DRIVER_PYTHON=jupyter
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook'
