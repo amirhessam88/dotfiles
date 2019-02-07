@@ -1,1 +1,1 @@
-# This repo presents my .files in Linux!
+# This repo presents my dot files in Linux!
