@@ -1,0 +1,23 @@
+# Loading libraries
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+from scipy import interp
+from sklearn.preprocessing import scale
+from sklearn.metrics import roc_auc_score, classification_report, accuracy_score, roc_curve, confusion_matrix, average_precision_score, precision_recall_curve
+from sklearn.model_selection import cross_val_score, KFold, StratifiedKFold, train_test_split
+from xgboost import XGBClassifier
+import itertools
+import glmnet
+import xgboost as xgb
+
+import seaborn as sns
+sns.set_style("ticks")
+mpl.rcParams['axes.linewidth'] = 3 
+mpl.rcParams['lines.linewidth'] = 2
+from IPython.core.display import display, HTML
+display(HTML("<style>.container { width:95% !important; }</style>"))
+import warnings 
+warnings.filterwarnings("ignore")
+%matplotlib inline
