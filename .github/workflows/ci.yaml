@@ -1,0 +1,23 @@
+name: CI/CD Workflow
+
+on: push
+
+jobs:
+    job1:
+        name: First job
+        runs-on: ubuntu-latest
+        steps:
+        - name: Step one
+          uses: actions/checkout@v2
+        - name: Step two
+          run: env | sort
+    job2:
+        name: Second job
+        runs-on: ubuntu-latest
+        steps:
+        - name: Step one
+          uses: actions/checkout@v2
+        - name: Step two
+          run: env | sort
+ 
+
