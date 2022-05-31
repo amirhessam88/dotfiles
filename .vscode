@@ -1,0 +1,131 @@
+{ // Editor +
+    "files.autoSave": "off",
+    "editor.formatOnSave": true,
+    "workbench.iconTheme": "ayu",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": false,
+    "workbench.settings.useSplitJSON": false,
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 12,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "Monaco",
+    "editor.rulers": [
+        100
+    ],
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false,
+    },
+    "editor.hover.enabled": true,
+    // Python Docstring
+    "autoDocstring.docstringFormat": "numpy",
+    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.startOnNewLine": false,
+    // Python
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "autoDocstring.guessTypes": true,
+    "autoDocstring.quoteStyle": "\"\"\"",
+    // "python.testing.pytestArgs": [
+    //     "--rootdir",
+    //     "${workspaceFolder}/tests"
+    // ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "100"
+    ],
+    "python.linting.flake8Path": "flake8",
+    "python.linting.flake8Args": [
+        "--max-line-length=100",
+        "--ignore=E203,W503,E402",
+        "--verbose",
+        "exclude =.git,__pycache__,docs/source/conf.py,old,build,dist,.venv,.venv /*,**/.venv/,.pytest_cache",
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.autoComplete.addBrackets": true,
+    "python.sortImports.args": [
+        "--profile=black"
+    ],
+    // Jupyter Notebook
+    "jupyter.logging.level": "error",
+    // "python.sortImports.path": "isort",
+    // "python.pythonPath": "/Users/amirhessam/.pyenv/shims/python",
+    "python.poetryPath": "${workspaceFolder}/.venv/bin/python",
+    // "python.testing.pytestArgs": [],
+    // "python.testing.pytestPath": "pytest",
+    // "python.linting.mypyArgs": [
+    //     "--follow-imports=silent",
+    //     "--ignore-missing-imports",
+    //     "--show-column-numbers"
+    // ],
+    // "python.linting.mypyCategorySeverity.error": "Error",
+    // "python.linting.mypyCategorySeverity.note": "Error",
+    // "python.linting.mypyEnabled": false,
+    // "python.linting.mypyPath": "mypy",
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName"
+    },
+    "code-runner.showExecutionMessage": false,
+    "code-runner.clearPreviousOutput": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "explorer.confirmDelete": false,
+    "python.analysis.completeFunctionParens": true,
+    // "editor.codeActionsOnSave": {
+    //     "source.organizeImports": true,
+    //     "python.sortImports": true,
+    // },
+    // HTML
+    "html.format.enable": true,
+    "html.format.wrapLineLength": 80,
+    // Language specific setting
+    // "[python]": {
+    //     "editor.codeActionsOnSave": {
+    //         "source.organizeImports": true
+    //     }
+    // },
+    // dbt + SQL + YAML
+    "dbt.listModelsDisabled": false,
+    // "dbt.runModelCommandAdditionalParams": [],
+    "files.associations": {
+        // "**/dir-foo/**/*.yaml": "jinja-yaml",
+        // "**/dir-foo/**/*.yml": "jinja-yaml",
+        "**/dir-foo/**/*.yaml": "yaml",
+        "**/dir-foo/**/*.yml": "yaml",
+        "**/dir-foo/**/*.sql": "jinja-sql",
+        "**/dir-foo/**/docs/**/*.md": "jinja-md"
+    },
+    "redhat.telemetry.enabled": true,
+    "sql.linter.executablePath": "/Users/amirhessam/.pyenv/shims/sqlfluff",
+    "sql.linter.run": "onSave",
+    // "sql.linter.ignoreParsing": true,
+    "[jinja-sql]": {
+        // "editor.defaultFormatter": "mtxr.sqltools",
+        // "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "advanced",
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools",
+        // "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+        "editor.formatOnSave": true,
+        "editor.autoIndent": "advanced",
+    },
+    // SQL-Tools
+    "sqltools.format": {
+        "reservedWordCase": "lower",
+        "language": "sql",
+        "linesBetweenQueries": 2
+    },
+    "sqltools.formatLanguages": [
+        "jinja-sql"
+    ],
+    "sqltools.highlightQuery": true,
+    "sqltools.queryParams.enableReplace": true,
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.askForKernelRestart": false,
+    "notebook.lineNumbers": "on",
+    "evenBetterToml.formatter.columnWidth": 40,
+}
