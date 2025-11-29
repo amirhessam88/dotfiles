@@ -106,10 +106,21 @@ source $ZSH/oh-my-zsh.sh
 
 
 # some Amir's alias
-alias c='clear'
-alias ll='ls -lah'
-alias ..='cd ..'
-
+alias c="clear"
+alias ll="ls -lah"
+alias ..="cd .."
+alias gs="git status"
+alias gba="git branch -a"
+alias gbd="git branch -D"
+alias gam="git add . && git commit -m"
+alias gaw="git add . && git commit -m 'WIP ...'"
+alias gpu="git push origin HEAD"
+alias gf="git fetch"
+alias gl="git log --oneline --graph --decorate"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gcm="git checkout master"
+alias gpr="git pull --rebase origin master"
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
@@ -131,6 +142,13 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # pipx
 export PATH="$PATH:/Users/amirhessam/.local/bin"
+
+
+# pyspark
+export SPARK_PATH="/Applications/Spark"
+export PYSPARK_DRIVER_PYTHON="jupyter"
+export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+export PYSPARK_PYTHON="python"
 
 # vscode
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
